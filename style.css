@@ -918,6 +918,43 @@ p {
 }
 
 /* ============================================
+    FEATURED PROPERTY
+    ============================================ */
+
+.featured-property-section { padding: 5rem 4rem; background: var(--primary-dark); }
+.featured-property-layout { display: flex; align-items: center; justify-content: space-between; gap: 3rem; }
+.featured-property-layout h2, .featured-property-layout p { color: var(--text-white); }
+.featured-property-layout .eyebrow, .property-hero .eyebrow { color: var(--accent-light-gold); font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.75rem; }
+.featured-property-layout h2 { margin-bottom: 0.75rem; }
+.featured-property-address { font-family: 'Playfair Display', serif; font-size: 1.25rem; line-height: 1.5; margin-bottom: 1.25rem; }
+.featured-property-layout p:last-child { max-width: 700px; margin-bottom: 0; color: #d9e0e8; }
+.property-hero { background: var(--primary-dark); color: var(--text-white); padding: 6rem 4rem; }
+.property-hero-content { max-width: 900px; }
+.property-hero h1 { color: var(--text-white); max-width: 850px; margin-bottom: 1rem; }
+.property-address { color: #d9e0e8; font-size: 1.3rem; line-height: 1.55; margin-bottom: 2rem; }
+.property-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.property-actions .btn-secondary { color: var(--text-white); border-color: var(--text-white); }
+.property-actions .btn-secondary:hover { background: var(--text-white); color: var(--primary-dark); }
+.property-overview, .property-location, .property-inquiry { padding: 5rem 4rem; }
+.property-overview, .property-inquiry { background: var(--bg-white); }
+.property-location { background: #f5f5f5; }
+.property-overview-grid, .property-location-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr); gap: 4rem; align-items: start; }
+.property-overview h2, .property-location h2, .property-inquiry h2 { margin-bottom: 1.25rem; }
+.property-overview p, .property-location p, .property-inquiry p { font-size: 1.05rem; }
+.property-facts { border-left: 3px solid var(--accent-gold); padding-left: 1.5rem; }
+.property-facts h3 { color: var(--primary-dark); font-size: 1.3rem; }
+.property-facts dl { display: grid; gap: 1rem; }
+.property-facts div { border-bottom: 1px solid var(--border-light); padding-bottom: 0.8rem; }
+.property-facts dt { color: var(--primary-dark); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.property-facts dd { color: var(--text-light); margin: 0.15rem 0 0; }
+.property-location-grid { grid-template-columns: 1fr 1fr; }
+.location-points { list-style: none; }
+.location-points li { border-bottom: 1px solid var(--border-light); color: var(--text-light); margin-bottom: 1rem; padding: 0 0 1rem 1.5rem; position: relative; }
+.location-points li::before { color: var(--accent-gold); content: '•'; font-size: 1.4rem; left: 0; line-height: 1; position: absolute; top: 0.2rem; }
+.property-inquiry-content { max-width: 760px; margin: 0 auto; text-align: center; }
+.property-inquiry-content .btn { margin-top: 0.5rem; }
+
+/* ============================================
    ITALY PAGE STYLES
    ============================================ */
 
@@ -1544,11 +1581,16 @@ p {
     /* Investment Pages */
     .investment-philosophy,
     .investment-principles,
-    .investment-strategy {
+    .investment-strategy,
+    .property-overview,
+    .property-location,
+    .property-inquiry {
         padding: 3rem 2rem;
     }
 
-    .markets-section {
+    .markets-section,
+    .featured-property-section,
+    .property-hero {
         padding: 3rem 2rem;
     }
 
@@ -1567,6 +1609,16 @@ p {
     .strategy-list {
         padding-left: 0;
     }
+
+    .featured-property-layout,
+    .property-overview-grid,
+    .property-location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-property-layout { display: grid; gap: 2rem; }
+    .property-actions { flex-direction: column; }
+    .property-actions .btn { width: 100%; text-align: center; }
 
     /* Italy Page */
     .italy-intro,
