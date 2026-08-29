@@ -932,6 +932,8 @@ p {
 .property-hero-content { max-width: 900px; }
 .property-hero h1 { color: var(--text-white); max-width: 850px; margin-bottom: 1rem; }
 .property-address { color: #d9e0e8; font-size: 1.3rem; line-height: 1.55; margin-bottom: 2rem; }
+.property-brokerage { color: #d9e0e8; font-size: 0.95rem; margin-top: -1rem; }
+.property-brokerage a { color: var(--accent-light-gold); }
 .property-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .property-actions .btn-secondary { color: var(--text-white); border-color: var(--text-white); }
 .property-actions .btn-secondary:hover { background: var(--text-white); color: var(--primary-dark); }
@@ -957,6 +959,7 @@ p {
 .location-points li::before { color: var(--accent-gold); content: '•'; font-size: 1.4rem; left: 0; line-height: 1; position: absolute; top: 0.2rem; }
 .property-inquiry-content { max-width: 760px; margin: 0 auto; text-align: center; }
 .property-inquiry-content .btn { margin-top: 0.5rem; }
+.brokerage-link { font-size: 0.9rem !important; margin-top: 1.5rem; }
 
 /* ============================================
    ITALY PAGE STYLES
