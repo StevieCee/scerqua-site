@@ -157,6 +157,43 @@ p {
     color: var(--accent-gold);
 }
 
+.property-banner {
+    background: var(--accent-gold);
+}
+
+.property-banner-content {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 0.7rem 4rem;
+}
+
+.property-banner p {
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.property-banner p span,
+.market-property-label {
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+.property-banner a {
+    color: var(--primary-dark);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.property-banner a:hover {
+    text-decoration: underline;
+}
+
 /* ============================================
    HERO SECTION
    ============================================ */
@@ -813,6 +850,32 @@ p {
     font-size: 0.95rem;
     line-height: 1.8;
     color: var(--text-light);
+}
+
+.market-property-link {
+    border-top: 1px solid var(--border-light);
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+}
+
+.market-property-label {
+    color: var(--primary-dark);
+    font-size: 0.75rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.market-property-link a {
+    color: var(--primary-dark);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration-color: var(--accent-gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2rem;
+}
+
+.market-property-link a:hover {
+    color: var(--accent-gold);
 }
 
 .investment-list {
@@ -1481,6 +1544,13 @@ p {
     .nav-menu {
         gap: 1.5rem;
         font-size: 0.85rem;
+    }
+
+    .property-banner-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.65rem 2rem;
     }
 
     .hero-content {
