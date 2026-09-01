@@ -1012,6 +1012,20 @@ p {
 .property-investment-content { max-width: 900px; margin: 0 auto; }
 .property-investment h2 { color: var(--text-white); }
 .property-investment p { color: #d9e0e8; }
+.property-comparables { background: #f5f5f5; padding: 5rem 4rem; }
+.property-comparables > .section-container { max-width: 1200px; }
+.property-comparables h2 { margin-bottom: 1.25rem; }
+.property-comparables > .section-container > p { font-size: 1.05rem; max-width: 900px; }
+.table-responsive { margin-top: 2rem; overflow-x: auto; }
+.comparables-table { background: var(--bg-white); border-collapse: collapse; min-width: 950px; width: 100%; }
+.comparables-table th, .comparables-table td { border-bottom: 1px solid var(--border-light); padding: 0.9rem 1rem; text-align: left; white-space: nowrap; }
+.comparables-table th { background: var(--primary-dark); color: var(--text-white); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.comparables-table td { color: var(--text-light); font-size: 0.92rem; }
+.comparables-table tbody tr:last-child td { border-bottom: 0; }
+.comparables-table tbody tr:hover { background: #faf7f0; }
+.pricing-analysis { border-left: 3px solid var(--accent-gold); margin-top: 2.5rem; max-width: 900px; padding-left: 1.5rem; }
+.pricing-analysis h3 { color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.75rem; }
+.pricing-analysis p:last-child { margin-bottom: 0; }
 .property-facts { border-left: 3px solid var(--accent-gold); padding-left: 1.5rem; }
 .property-facts h3 { color: var(--primary-dark); font-size: 1.3rem; }
 .property-facts dl { display: grid; gap: 1rem; }
@@ -1665,7 +1679,8 @@ p {
     .property-overview,
     .property-location,
     .property-inquiry,
-    .property-investment {
+    .property-investment,
+    .property-comparables {
         padding: 3rem 2rem;
     }
 
