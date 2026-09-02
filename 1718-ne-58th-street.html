@@ -332,27 +332,12 @@
         </div>
     </section>
 
-    <!-- FUTURE PHOTOS -->
-
     <section class="property-gallery">
         <div class="section-container">
 
             <h2>Property Gallery</h2>
 
-            <p>
-                Professional photography will be added soon and will include:
-            </p>
-
-            <ul class="location-points">
-                <li>Front Elevation & Curb Appeal</li>
-                <li>Living & Dining Areas</li>
-                <li>Kitchen</li>
-                <li>Primary Suite</li>
-                <li>Guest Bedrooms</li>
-                <li>Pool & Outdoor Living Spaces</li>
-                <li>Neighborhood & Area Highlights</li>
-                <li>Before & After Renovation Comparisons</li>
-            </ul>
+            <div class="property-gallery-grid" id="property-gallery" aria-label="Property photos"></div>
 
         </div>
     </section>
@@ -378,6 +363,49 @@
         </p>
     </div>
 </footer>
+
+<dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Expanded property photo">
+    <button class="gallery-close" type="button" aria-label="Close photo viewer">Close</button>
+    <img id="gallery-lightbox-image" src="" alt="">
+</dialog>
+
+<script>
+    const gallery = document.getElementById('property-gallery');
+    const lightbox = document.getElementById('gallery-lightbox');
+    const lightboxImage = document.getElementById('gallery-lightbox-image');
+    const photoPath = 'images/1718-ne-58th-street/';
+    const photoNames = Array.from({ length: 99 }, (_, index) => `1718 NE 58th St-${index + 1}.jpg`);
+
+    photoNames.push('Floor-1.jpg');
+
+    photoNames.forEach((photoName, index) => {
+        const photoLink = document.createElement('button');
+        const photo = document.createElement('img');
+        const photoNumber = index + 1;
+
+        photoLink.type = 'button';
+        photoLink.className = 'property-gallery-item';
+        photoLink.setAttribute('aria-label', `View property photo ${photoNumber}`);
+        photo.src = `${photoPath}${photoName}`;
+        photo.alt = photoName === 'Floor-1.jpg' ? 'Floor plan for 1718 NE 58th Street' : `Property photo ${photoNumber}`;
+        photo.loading = 'lazy';
+        photo.decoding = 'async';
+
+        photoLink.addEventListener('click', () => {
+            lightboxImage.src = photo.src;
+            lightboxImage.alt = photo.alt;
+            lightbox.showModal();
+        });
+
+        photoLink.appendChild(photo);
+        gallery.appendChild(photoLink);
+    });
+
+    lightbox.querySelector('.gallery-close').addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) lightbox.close();
+    });
+</script>
 
 </body>
 </html>
