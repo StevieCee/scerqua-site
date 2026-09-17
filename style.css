@@ -611,6 +611,98 @@ p {
     max-width: 680px;
 }
 
+.tangible-intro,
+.tangible-assets-section,
+.tangible-guidance {
+    padding: 5rem 4rem;
+}
+
+.tangible-intro {
+    background: var(--bg-white);
+}
+
+.tangible-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) 1.2fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.tangible-intro h2 {
+    color: var(--primary-dark);
+    font-size: 2.25rem;
+    margin-bottom: 0;
+}
+
+.tangible-copy p,
+.tangible-guidance-content p {
+    line-height: 1.9;
+}
+
+.tangible-assets-section {
+    background: #f5f5f5;
+}
+
+.tangible-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.tangible-list-panel {
+    background: var(--bg-white);
+    border-top: 3px solid var(--accent-gold);
+    box-shadow: var(--shadow-sm);
+    padding: 2.25rem;
+}
+
+.tangible-list-panel h3 {
+    color: var(--primary-dark);
+    font-size: 1.35rem;
+}
+
+.tangible-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tangible-list li {
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-light);
+    line-height: 1.7;
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    position: relative;
+}
+
+.tangible-list li:last-child {
+    border-bottom: 0;
+}
+
+.tangible-list li::before {
+    color: var(--accent-gold);
+    content: '•';
+    font-size: 1.3rem;
+    left: 0;
+    position: absolute;
+    top: 0.65rem;
+}
+
+.tangible-guidance {
+    background: var(--bg-white);
+}
+
+.tangible-guidance-content {
+    max-width: 900px;
+}
+
+.tangible-guidance-content h2 {
+    color: var(--primary-dark);
+}
+
+.tangible-guidance-content .btn {
+    margin-top: 0.75rem;
+}
+
 .eyebrow {
     color: var(--accent-gold);
     font-size: 0.8rem;
@@ -1886,6 +1978,9 @@ p {
     .investment-philosophy,
     .investment-principles,
     .investment-strategy,
+    .tangible-intro,
+    .tangible-assets-section,
+    .tangible-guidance,
     .property-overview,
     .property-location,
     .property-inquiry,
@@ -1907,7 +2002,9 @@ p {
 
     .investment-feature-link-content,
     .options-intro-grid,
-    .options-framework-grid {
+    .options-framework-grid,
+    .tangible-intro-grid,
+    .tangible-lists {
         grid-template-columns: 1fr;
     }
 
