@@ -2661,18 +2661,19 @@ p {
 .family-timeline-section .family-timeline {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1120px;
-    width: 100%;
+    max-width: 1120px !important;
+    width: min(1120px, calc(100vw - 8rem)) !important;
 }
 
 .family-timeline-section .timeline-event {
-    display: block;
+    display: block !important;
+    grid-template-columns: none !important;
     margin: 0 auto;
     max-width: 1120px;
     min-height: 0;
     padding-left: 2.25rem;
     position: relative;
-    width: 100%;
+    width: 100% !important;
 }
 
 .family-timeline-section .timeline-event:not(:last-child)::before {
@@ -2709,15 +2710,22 @@ p {
 }
 
 .family-timeline-section .timeline-card {
+    display: block !important;
     margin-bottom: 2.5rem;
     min-width: 0;
     padding: 2rem 2.25rem;
     width: 100%;
 }
 
+.family-timeline-section .bilingual-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+}
+
 @media (max-width: 768px) {
     .family-timeline-section .family-timeline {
-        max-width: 100%;
+        max-width: 100% !important;
+        width: 100% !important;
     }
 
     .family-timeline-section .timeline-event {
@@ -2731,5 +2739,9 @@ p {
     .family-timeline-section .timeline-card {
         margin-bottom: 1.5rem;
         padding: 1.5rem;
+    }
+
+    .family-timeline-section .bilingual-grid {
+        grid-template-columns: 1fr !important;
     }
 }
