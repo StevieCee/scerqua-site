@@ -2399,15 +2399,39 @@ p {
 }
 
 .generation-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.generation-row {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.generation-row-child {
+    grid-template-columns: minmax(0, 360px);
+    justify-content: center;
+}
+
+.generation-row-parents {
+    border-top: 1px solid #cdbd98;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 2rem;
 }
 
 .ancestor-grid.four-up {
+    border-top: 1px solid #cdbd98;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 2rem;
 }
 
 .ancestor-grid.two-up {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.earlier-generations .ancestor-grid + .ancestor-grid {
+    border-top: 1px solid #cdbd98;
+    padding-top: 2rem;
 }
 
 .family-unit {
@@ -2902,6 +2926,7 @@ p {
     .tree-intro-grid,
     .tree-branches,
     .generation-grid,
+    .generation-row,
     .ancestor-grid.four-up,
     .ancestor-grid.two-up {
         grid-template-columns: 1fr;
