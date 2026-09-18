@@ -2233,6 +2233,10 @@ p {
     background: #f7f5f0;
 }
 
+.family-timeline-section > .section-container {
+    max-width: 1600px;
+}
+
 .family-heading-row {
     align-items: end;
     margin-bottom: 3rem;
@@ -2264,13 +2268,14 @@ p {
 
 .family-timeline {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1500px;
+    width: 100%;
 }
 
 .timeline-event {
     display: grid;
-    grid-template-columns: 190px 28px minmax(0, 1fr);
-    gap: 1.75rem;
+    grid-template-columns: 150px 28px minmax(0, 1fr);
+    gap: 1.25rem;
     min-height: 180px;
     position: relative;
 }
@@ -2278,7 +2283,7 @@ p {
 .timeline-event:not(:last-child)::before {
     background: #cdbd98;
     content: '';
-    left: 204px;
+    left: 169px;
     position: absolute;
     top: 24px;
     bottom: -24px;
