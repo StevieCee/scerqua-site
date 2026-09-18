@@ -2380,6 +2380,74 @@ p {
     padding: 0.85rem 1rem;
 }
 
+.evidence-inline {
+    align-items: start;
+    display: flex;
+    gap: 1rem;
+    margin: 1.25rem 0 0;
+}
+
+.evidence-inline img {
+    border: 1px solid #cdbd98;
+    height: 74px;
+    object-fit: cover;
+    width: 130px;
+}
+
+.evidence-inline figcaption {
+    color: var(--text-light);
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+.evidence-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.evidence-strip a,
+.archive-image-grid a {
+    color: #315a59;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.evidence-strip img {
+    display: block;
+    height: 60px;
+    margin-bottom: 0.35rem;
+    object-fit: cover;
+    width: 160px;
+}
+
+.archive-summary {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.archive-image-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 1.5rem;
+}
+
+.archive-image-grid a {
+    display: block;
+}
+
+.archive-image-grid img {
+    border: 1px solid #cdbd98;
+    display: block;
+    height: 72px;
+    margin-bottom: 0.35rem;
+    object-fit: cover;
+    width: 100%;
+}
+
 .family-records {
     background: #fffdf8;
 }
@@ -2530,6 +2598,10 @@ p {
 
     .record-card-wide {
         grid-column: auto;
+    }
+
+    .archive-image-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .family-heading-row {
