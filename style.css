@@ -2231,15 +2231,22 @@ p {
 
 .family-timeline-section {
     background: #f7f5f0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .family-timeline-section > .section-container {
-    max-width: 1600px;
+    max-width: none;
+    padding-left: clamp(1rem, 4vw, 4rem);
+    padding-right: clamp(1rem, 4vw, 4rem);
 }
 
 .family-heading-row {
     align-items: end;
     margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
 }
 
 .family-heading-row .section-title {
@@ -2268,14 +2275,14 @@ p {
 
 .family-timeline {
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1180px;
     width: 100%;
 }
 
 .timeline-event {
     display: grid;
-    grid-template-columns: 150px 28px minmax(0, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: 130px 24px minmax(0, 1fr);
+    gap: 1rem;
     min-height: 180px;
     position: relative;
 }
@@ -2283,7 +2290,7 @@ p {
 .timeline-event:not(:last-child)::before {
     background: #cdbd98;
     content: '';
-    left: 169px;
+    left: 143px;
     position: absolute;
     top: 24px;
     bottom: -24px;
@@ -2329,6 +2336,7 @@ p {
     box-shadow: var(--shadow-sm);
     margin-bottom: 2rem;
     padding: 2rem 2.25rem;
+    width: 100%;
 }
 
 .featured-event .timeline-card {
