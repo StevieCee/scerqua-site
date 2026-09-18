@@ -2656,3 +2656,80 @@ p {
         gap: 1rem;
     }
 }
+
+/* Final family-timeline layout: scoped to avoid the site's older timeline rules. */
+.family-timeline-section .family-timeline {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    width: 100%;
+}
+
+.family-timeline-section .timeline-event {
+    display: block;
+    margin: 0 auto;
+    max-width: 1120px;
+    min-height: 0;
+    padding-left: 2.25rem;
+    position: relative;
+    width: 100%;
+}
+
+.family-timeline-section .timeline-event:not(:last-child)::before {
+    bottom: -2rem;
+    left: 0.45rem;
+    top: 1.5rem;
+}
+
+.family-timeline-section .timeline-date {
+    padding: 0 0 0.75rem;
+    text-align: left;
+}
+
+.family-timeline-section .timeline-date span,
+.family-timeline-section .timeline-date small {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.family-timeline-section .timeline-date span {
+    font-size: 1.35rem;
+    margin-right: 0.65rem;
+}
+
+.family-timeline-section .timeline-date small {
+    font-size: 0.72rem;
+}
+
+.family-timeline-section .timeline-marker {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.family-timeline-section .timeline-card {
+    margin-bottom: 2.5rem;
+    min-width: 0;
+    padding: 2rem 2.25rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .family-timeline-section .family-timeline {
+        max-width: 100%;
+    }
+
+    .family-timeline-section .timeline-event {
+        padding-left: 1.5rem;
+    }
+
+    .family-timeline-section .timeline-date span {
+        font-size: 1.2rem;
+    }
+
+    .family-timeline-section .timeline-card {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+    }
+}
