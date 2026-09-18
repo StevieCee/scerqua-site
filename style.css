@@ -2129,6 +2129,16 @@ p {
     background: #f7f5f0;
 }
 
+.family-page .section-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(100%, 1440px);
+}
+
+.family-page p {
+    max-width: 78ch;
+}
+
 .family-page .header,
 .family-page .footer {
     background: #182b32;
@@ -2206,7 +2216,7 @@ p {
 .family-intro-grid {
     display: grid;
     gap: 5rem;
-    grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+    grid-template-columns: minmax(320px, 0.75fr) 1.25fr;
 }
 
 .family-intro h2 {
@@ -2254,13 +2264,13 @@ p {
 
 .family-timeline {
     margin: 0 auto;
-    max-width: 1120px;
+    max-width: 1280px;
 }
 
 .timeline-event {
     display: grid;
-    grid-template-columns: 150px 24px 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 190px 28px minmax(0, 1fr);
+    gap: 1.75rem;
     min-height: 180px;
     position: relative;
 }
@@ -2268,7 +2278,7 @@ p {
 .timeline-event:not(:last-child)::before {
     background: #cdbd98;
     content: '';
-    left: 161px;
+    left: 204px;
     position: absolute;
     top: 24px;
     bottom: -24px;
@@ -2313,7 +2323,7 @@ p {
     border-left: 4px solid #cdbd98;
     box-shadow: var(--shadow-sm);
     margin-bottom: 2rem;
-    padding: 1.75rem 2rem;
+    padding: 2rem 2.25rem;
 }
 
 .featured-event .timeline-card {
@@ -2555,6 +2565,10 @@ p {
         padding-top: 4rem;
     }
 
+    .family-page .section-container {
+        width: 100%;
+    }
+
     .family-intro-grid,
     .bilingual-grid,
     .source-columns,
@@ -2568,24 +2582,43 @@ p {
     }
 
     .timeline-event {
-        gap: 0.9rem;
-        grid-template-columns: 72px 16px 1fr;
+        display: block;
+        min-height: 0;
+        padding-left: 1.5rem;
     }
 
     .timeline-event:not(:last-child)::before {
-        left: 79px;
+        bottom: -1rem;
+        left: 0.35rem;
+        top: 1.4rem;
+    }
+
+    .timeline-date {
+        padding: 0 0 0.7rem;
+        text-align: left;
     }
 
     .timeline-date span {
-        font-size: 1rem;
+        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
     }
 
     .timeline-date small {
-        font-size: 0.64rem;
+        display: inline-block;
+        font-size: 0.68rem;
+    }
+
+    .timeline-marker {
+        left: -0.05rem;
+        margin: 0;
+        position: absolute;
+        top: 1.45rem;
     }
 
     .timeline-card {
-        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
     }
 
     .bilingual-grid > div + div,
