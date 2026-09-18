@@ -2211,6 +2211,7 @@ p {
 
 .family-intro {
     background: #fffdf8;
+}
 
 /* ============================================
    FAMILY TREE
@@ -2485,7 +2486,6 @@ p {
 
 .tree-notes a:hover {
     text-decoration: underline;
-}
 }
 
 .family-intro-grid {
