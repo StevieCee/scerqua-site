@@ -2417,6 +2417,19 @@ p {
     width: 130px;
 }
 
+.evidence-inline > a {
+    display: block;
+    flex: 0 0 auto;
+}
+
+.evidence-inline > a:hover img,
+.evidence-strip a:hover img,
+.archive-image-grid a:hover img {
+    border-color: var(--accent-gold);
+    box-shadow: var(--shadow-sm);
+    opacity: 0.85;
+}
+
 .evidence-inline figcaption {
     color: var(--text-light);
     font-size: 0.78rem;
@@ -2520,6 +2533,27 @@ p {
 
 .record-card a:hover {
     color: #8b6a3f;
+    text-decoration: underline;
+}
+
+.document-record {
+    display: flex;
+    flex-direction: column;
+}
+
+.document-record .full-size-link {
+    margin-top: auto;
+    padding-top: 0.75rem;
+}
+
+.document-record .return-link {
+    color: #8b6a3f;
+    font-size: 0.76rem;
+    margin-top: 0.75rem;
+    text-decoration: none;
+}
+
+.document-record .return-link:hover {
     text-decoration: underline;
 }
 
