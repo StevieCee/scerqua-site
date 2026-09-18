@@ -2120,3 +2120,421 @@ p {
         padding: 2rem;
     }
 }
+
+/* ============================================
+   CERQUA FAMILY ARCHIVE
+   ============================================ */
+
+.family-page {
+    background: #f7f5f0;
+}
+
+.family-page .header,
+.family-page .footer {
+    background: #182b32;
+}
+
+.family-hero {
+    background: linear-gradient(120deg, #182b32 0%, #315a59 58%, #8b6a3f 100%);
+    color: var(--text-white);
+    padding: 7rem 4rem 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.family-hero::after {
+    border: 1px solid rgba(232, 197, 71, 0.35);
+    content: '';
+    height: 420px;
+    position: absolute;
+    right: -90px;
+    top: -160px;
+    transform: rotate(28deg);
+    width: 420px;
+}
+
+.family-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.family-hero h1 {
+    color: var(--text-white);
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    margin-bottom: 1rem;
+}
+
+.family-hero .eyebrow,
+.family-hero-subtitle {
+    color: #f4df9a;
+}
+
+.family-hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 700px;
+}
+
+.family-hero-meta {
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+.family-hero-meta span {
+    color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.family-intro,
+.family-timeline-section,
+.family-records,
+.family-relationships {
+    padding: 5rem 4rem;
+}
+
+.family-intro {
+    background: #fffdf8;
+}
+
+.family-intro-grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+}
+
+.family-intro h2 {
+    color: var(--primary-dark);
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.family-intro-copy p {
+    line-height: 1.9;
+}
+
+.family-timeline-section {
+    background: #f7f5f0;
+}
+
+.family-heading-row {
+    align-items: end;
+    margin-bottom: 3rem;
+}
+
+.family-heading-row .section-title {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.language-key {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.language-key span,
+.language-label {
+    color: #8b6a3f;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.language-key span {
+    border: 1px solid #cdbd98;
+    padding: 0.25rem 0.5rem;
+}
+
+.family-timeline {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.timeline-event {
+    display: grid;
+    grid-template-columns: 150px 24px 1fr;
+    gap: 1.5rem;
+    min-height: 180px;
+    position: relative;
+}
+
+.timeline-event:not(:last-child)::before {
+    background: #cdbd98;
+    content: '';
+    left: 161px;
+    position: absolute;
+    top: 24px;
+    bottom: -24px;
+    width: 1px;
+}
+
+.timeline-date {
+    padding-top: 0.15rem;
+    text-align: right;
+}
+
+.timeline-date span {
+    color: var(--primary-dark);
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.timeline-date small {
+    color: var(--text-light);
+    display: block;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    margin-top: 0.25rem;
+}
+
+.timeline-marker {
+    background: var(--accent-gold);
+    border: 5px solid #f7f5f0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #8b6a3f;
+    height: 16px;
+    margin-top: 0.25rem;
+    position: relative;
+    width: 16px;
+    z-index: 1;
+}
+
+.timeline-card {
+    background: #fffdf8;
+    border-left: 4px solid #cdbd98;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+    padding: 1.75rem 2rem;
+}
+
+.featured-event .timeline-card {
+    border-left-color: var(--accent-gold);
+}
+
+.person-heading h3 {
+    color: var(--primary-dark);
+    margin-bottom: 0.25rem;
+}
+
+.person-heading h3 span,
+.person-heading h3 em {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.person-heading h3 em {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    margin: 0 0.25rem;
+}
+
+.person-heading p {
+    color: #8b6a3f;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.bilingual-grid,
+.source-columns {
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bilingual-grid > div + div,
+.source-columns > div + div {
+    border-left: 1px solid var(--border-light);
+    padding-left: 1.75rem;
+}
+
+.language-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.bilingual-grid p,
+.source-columns p {
+    font-size: 0.94rem;
+    line-height: 1.75;
+    margin-bottom: 0;
+}
+
+.record-note {
+    background: #f4eddb;
+    border-left: 2px solid var(--accent-gold);
+    color: #5e5547;
+    font-size: 0.84rem;
+    line-height: 1.7;
+    margin-top: 1.25rem;
+    padding: 0.85rem 1rem;
+}
+
+.family-records {
+    background: #fffdf8;
+}
+
+.records-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.record-card {
+    border-top: 3px solid var(--accent-gold);
+    box-shadow: var(--shadow-sm);
+    background: #f7f5f0;
+    padding: 1.75rem;
+}
+
+.record-card-wide {
+    grid-column: 1 / -1;
+}
+
+.record-number {
+    color: #8b6a3f;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.record-card h3 {
+    color: var(--primary-dark);
+    font-size: 1.3rem;
+}
+
+.record-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.record-card a {
+    color: #315a59;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.record-card a:hover {
+    color: #8b6a3f;
+    text-decoration: underline;
+}
+
+.family-relationships {
+    background: #315a59;
+    color: #fff;
+}
+
+.family-relationships .section-title,
+.family-relationships .eyebrow,
+.relationship-list strong {
+    color: #fff;
+}
+
+.relationship-list {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.relationship-list > div {
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    padding-top: 1.25rem;
+}
+
+.relationship-list strong {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+}
+
+.relationship-list span {
+    color: #f4df9a;
+    margin: 0 0.45rem;
+}
+
+.relationship-list p {
+    color: #e5eeee;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .family-hero,
+    .family-intro,
+    .family-timeline-section,
+    .family-records,
+    .family-relationships {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .family-hero {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
+    .family-intro-grid,
+    .bilingual-grid,
+    .source-columns,
+    .records-grid,
+    .relationship-list {
+        grid-template-columns: 1fr;
+    }
+
+    .family-intro-grid {
+        gap: 1.5rem;
+    }
+
+    .timeline-event {
+        gap: 0.9rem;
+        grid-template-columns: 72px 16px 1fr;
+    }
+
+    .timeline-event:not(:last-child)::before {
+        left: 79px;
+    }
+
+    .timeline-date span {
+        font-size: 1rem;
+    }
+
+    .timeline-date small {
+        font-size: 0.64rem;
+    }
+
+    .timeline-card {
+        padding: 1.25rem;
+    }
+
+    .bilingual-grid > div + div,
+    .source-columns > div + div {
+        border-left: 0;
+        border-top: 1px solid var(--border-light);
+        padding-left: 0;
+        padding-top: 1.25rem;
+    }
+
+    .record-card-wide {
+        grid-column: auto;
+    }
+
+    .family-heading-row {
+        align-items: start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
